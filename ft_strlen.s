@@ -1,6 +1,6 @@
 	section .text
-	global	_ft_strlen
-_ft_strlen:
+	global	ft_strlen
+ft_strlen:
 	mov		rax, 0						
 	cmp		rdi, 0						 
 	je		fin_while

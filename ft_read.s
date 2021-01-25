@@ -1,6 +1,6 @@
 	section	.text
-	global	_ft_read
-_ft_read:
+	global	ft_read
+ft_read:
 	mov		r10, rdx
 	mov		rax, 0x02000003
 	syscall

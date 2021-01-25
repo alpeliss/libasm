@@ -1,6 +1,6 @@
 	section		.text
-	global		_ft_strcmp
-_ft_strcmp:
+	global		ft_strcmp
+ft_strcmp:
 	mov		r12, 0
 	while:
 		mov		r11B, byte[rdi + r12]

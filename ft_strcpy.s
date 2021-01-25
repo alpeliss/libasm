@@ -1,6 +1,6 @@
 	section		.text
-	global		_ft_strcpy
-_ft_strcpy:
+	global		ft_strcpy
+ft_strcpy:
 	cmp		rdi, 0			;dest
 	je		fin_while
 	cmp		rsi, 0			;src
