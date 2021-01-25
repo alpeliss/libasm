@@ -2,16 +2,22 @@
 	global		_ft_strcmp
 _ft_strcmp:
 	mov		r12, 0
-	mov		al, 0
 	while:
-		mov		r11B, byte[rsi + r12]
-		cmp		byte[rdi + r12], r11B
-		je		fin_while
+		mov		r11B, byte[rdi + r12]
+		mov		r13B, byte[rsi + r12]
 		cmp		r11B, 0
 		je		fin_while
 		inc		r12
+		cmp		r13B, r11B
+		jne		fin_while		
 		jmp		while
 	fin_while:
-		sub		al, byte[rdi + r12]
-		add		al, r11B
+		mov		rax, 0
+		cmp		r13B, r11B
+		je		fin
+		mov		rax, -1
+		cmp		r13B, r11B
+		ja		fin
+		mov		rax, 1
+	fin:
 	ret
