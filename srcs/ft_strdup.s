@@ -5,6 +5,9 @@
 	section		.text
 	global		ft_strdup
 ft_strdup:
+	mov	rax, 0
+	cmp	rdi, 0
+	je	end
 	push	rdi
 	call	ft_strlen
 	mov		rdi, rax

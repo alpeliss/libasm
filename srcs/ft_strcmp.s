@@ -1,6 +1,15 @@
 	section		.text
 	global		ft_strcmp
 ft_strcmp:
+	mov		rax, 0
+	cmp		rdi, rsi
+	je		fin	
+	mov		rax, -1
+	cmp		rdi, 0		
+	je		fin	
+	mov		rax, 1
+	cmp		rsi, 0
+	je		fin
 	mov		r12, 0
 	while:
 		mov		r11B, byte[rdi + r12]
