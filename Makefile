@@ -1,9 +1,9 @@
 SRCDIR		= ./srcs/
-SRCNAME		= ft_write.s	/
-		  ft_read.s	/
-		  ft_strlen.s	/
-		  ft_strcpy.s	/
-		  ft_strcmp.s	/
+SRCNAME		= ft_write.s	\
+		  ft_read.s	\
+		  ft_strlen.s	\
+		  ft_strcpy.s	\
+		  ft_strcmp.s	\
 		  ft_strdup.s
 
 SRCS		= ${addprefix ${SRCDIR}, ${SRCNAME}}
@@ -36,4 +36,3 @@ re:		fclean all
 c:		all clean
 
 .PHONY:		clean fclean re all
-© 2021 GitHub, In
